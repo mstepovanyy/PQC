@@ -26,15 +26,6 @@ public class Queue <T>{
         return queue.add(new QueueItem<T>(item));
     }
 
-    public void addAll(Collection<T> items) {
-        items.forEach(item -> {
-            queue.add(new QueueItem<>(item));
-        });
-    }
-
-    public boolean isEmpty() {
-        return queue.isEmpty();
-    }
 
     public int size() {
         return queue.size();
